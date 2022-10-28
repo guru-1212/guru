@@ -12,6 +12,7 @@
     <style>
         body {
             background-color: rgb(247, 208, 208);
+        font-weight: bold;
 
 
         }
@@ -19,13 +20,17 @@
         img {
             border-radius: 50%;
             transition-duration: 1s;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
         }
 
         img:hover {
-            transform: scale(1.1);
+            /* transform: scale(1.1);
             transition-duration: 1s;
             transform: rotate(360deg);
-            transition-duration: 1s;
+            transition-duration: 1s; */
+          
         }
 
         a {
@@ -99,6 +104,14 @@
             font-weight: bold;
 
         }
+        @keyframes bubble {
+  0%, 50%, 100% {
+    opacity: 100%;
+  }
+  25%, 75% {
+    opacity: 0%;
+  }
+}
 
         .card {
             width: 600px;
@@ -145,21 +158,21 @@
         <span class="bi bi-square-fill" style="color: blue;"></span><span class="ms-2">Projects</span>
     </div>
     <div class="para">
-        <div class="para">
+        <div class="container-fluid w-50">
             <p>I am Guru Tangawar below all projects are created by me . To see my projects click the below link. also
                 guide me plz I am new in web developement. <br>
                 **** THX ******
                 .</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container w-75">
         <div class="card">
             <div>
                 <div class="card-title">
                     <font size="5"><b class="ms-4">Project name 01</b></font>
                     <p class="ms-4">Naresh it website </p>
                 </div>
-                <div class="card-para">
+                <div class="card-para ">
                     <p>I am Guru Tangawar below projects is created by
                         me and for watch my website click the below link.
                         <br>
